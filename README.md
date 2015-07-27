@@ -2,11 +2,17 @@
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
+To get and use this repository, please install [Mercurial](https://mercurial.selenic.com/) and [Python](https://www.python.org/) first. You may then use the following commands:
+
+    clone https://bitbucket.org/stephen-paul-chappell/qtpipe
+    cd qtpipe
+    echo Hello World | qtpipe.py
+
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* This repository is designed to hold code for the QTpipe utility. The QTpipe utility is designed to pipe data over network connections. This allows data to be piped across two terminal sessions either on the same computer or somewhere on a common network.
+* The latest version of QTpipe is 1.0.1 and can be found in the source of the `qtpipe.py` file.
+* If you wish to contribute to this README file and are unfamiliar with [Markdown](http://daringfireball.net/projects/markdown/), please consider [learning markdown](https://bitbucket.org/tutorials/markdowndemo) before attempting to contribute.
 
 ### How do I get set up? ###
 
@@ -15,7 +21,7 @@ This README would normally document whatever steps are necessary to get your app
 * QTpipe has no dependencies beyond Python's standard library that comes bundled with its installation. Once Python 3 is installed, this utility should work without need for changes.
 * There are several settings at the top of `qtpipe.py` that may be changed if needed. In particular `DEFAULT_HOST` and `DEFAULT_PORT` may be set to other values if appropriate.
 * To test the program to see if it is working properly, open two terminals on the same computer and pipe data into one and out of the other. You may also do the same across a network by specifying the appropriate command line arguments.
-* You may deploy the program as-is across a network as long as Python 3 is installed on the target machines. For development, [PyCharm](https://www.jetbrains.com/pycharm/) is supported by making use of the `.idea` diretory in the repository.
+* You may deploy the program as-is across a network as long as Python 3 is installed on the target machines. For development, [PyCharm](https://www.jetbrains.com/pycharm/) is supported by making use of the `.idea` directory in the repository.
 
 ### Contribution guidelines ###
 
