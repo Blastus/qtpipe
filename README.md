@@ -25,5 +25,5 @@ This README would normally document whatever steps are necessary to get your app
 
 ### Who do I talk to? ###
 
-* [Stephen Chappell](mailto:Noctis.Skytower@gmail.com)
-* [Jacob Bridges](mailto:him@jacobandkate143.com)
+* [Stephen Chappell](mailto:Noctis.Skytower@gmail.com?subject=QTpipe)
+* [Jacob Bridges](mailto:him@jacobandkate143.com?subject=QTpipe)
