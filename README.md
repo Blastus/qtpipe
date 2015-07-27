@@ -25,5 +25,5 @@ This README would normally document whatever steps are necessary to get your app
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* [Stephen Chappell](mailto:Noctis.Skytower@gmail.com)
+* [Jacob Bridges](mailto:him@jacobandkate143.com)
