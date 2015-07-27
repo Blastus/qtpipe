@@ -1,7 +1,5 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
 To get and use this repository, please install [Mercurial](https://mercurial.selenic.com/) and [Python](https://www.python.org/) first. You may then use the following commands:
 
     clone https://bitbucket.org/stephen-paul-chappell/qtpipe
