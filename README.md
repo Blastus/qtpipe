@@ -9,7 +9,7 @@ To get and use this repository, please install [Mercurial](https://mercurial.sel
 ### What is this repository for? ###
 
 * This repository is designed to hold code for the QTpipe utility. The QTpipe utility is designed to pipe data over network connections. This allows data to be piped across two terminal sessions either on the same computer or somewhere on a common network.
-* The latest version of QTpipe is 1.0.1 and can be found in the source of the `qtpipe.py` file.
+* The latest version of QTpipe is 1.0.2 and can be found in the source of the `qtpipe.py` file.
 * If you wish to contribute to this README file and are unfamiliar with [Markdown](http://daringfireball.net/projects/markdown/), please consider [learning markdown](https://bitbucket.org/tutorials/markdowndemo) before attempting to contribute.
 
 ### How do I get set up? ###
