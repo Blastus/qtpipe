@@ -130,20 +130,23 @@ def create_server(port):
 
 def pipe_from_link_to_standard_out(link):
     """Collect all data from the socket and display it using standard out."""
-    while True:
-        buffer = link.recv(BUFFER_SIZE)
-        if not buffer:
-            break
-        os.write(STANDARD_OUT, buffer)
+    read_and_write(lambda: link.recv(BUFFER_SIZE),
+                   lambda buffer: os.write(STANDARD_OUT, buffer))
 
 
 def pipe_from_standard_in_to_link(link):
     """Communicate all data from standard in through the connected socket."""
+    read_and_write(lambda: os.read(STANDARD_IN, BUFFER_SIZE),
+                   lambda buffer: link.sendall(buffer))
+
+
+def read_and_write(reader, writer):
+    """Copy a buffer from a data source and send it to a sink if available."""
     while True:
-        buffer = os.read(STANDARD_IN, BUFFER_SIZE)
+        buffer = reader()
         if not buffer:
             break
-        link.sendall(buffer)
+        writer(buffer)
 
 if __name__ == '__main__':
     main()
