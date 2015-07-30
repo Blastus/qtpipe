@@ -31,13 +31,16 @@ def main():
     link = make_link()
     try:
         if os.isatty(STANDARD_IN):
+            link.shutdown(socket.SHUT_WR)
             pipe_from_link_to_standard_out(link)
+            link.shutdown(socket.SHUT_RD)
         else:
+            link.shutdown(socket.SHUT_RD)
             pipe_from_standard_in_to_link(link)
+            link.shutdown(socket.SHUT_WR)
     except socket.timeout:
         raise_error('could not process any data within the timeout period')
     finally:
-        link.shutdown(socket.SHUT_RDWR)
         link.close()
 
 
